@@ -8,6 +8,14 @@ public class ResourceOptimizer
     // 菜单项配置
     // ==========================================
 
+    [MenuItem("Tools/Optimize Resources/3. 一键修复所有问题 (Fix All)", false, 3)]
+    public static void FixAllIssues()
+    {
+        FixAllTextures();
+        FixAllModels();
+        EditorUtility.DisplayDialog("Resource Optimizer", "所有资源优化已完成！\n请检查控制台日志获取详细信息。", "确定");
+    }
+
     [MenuItem("Tools/Optimize Resources/1. 修复所有纹理设置 (Fix Textures)", false, 1)]
     public static void FixAllTextures()
     {
