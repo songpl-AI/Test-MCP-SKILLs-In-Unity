@@ -1,0 +1,56 @@
+﻿Path,Type,Size (MB),Issues
+Assets/Scenes/SampleScene.unity,Scene,0.0070,
+Assets/SimpleNaturePack/Textures/NaturePackLite_Texture_01.png,Texture,0.0076,非 UI 纹理关闭了 Mipmaps (带宽风险); 缺少特定平台覆盖设置 (Android/iOS)
+Assets/SimpleNaturePack/Scenes/SimpleNaturePack_Overview.unity,Scene,0.0763,
+Assets/SimpleNaturePack/Scenes/SimpleNaturePack_Demo.unity,Scene,0.4036,
+Assets/SimpleNaturePack/Materials/SimpleNaturePack_Texture_01.mat,Material,0.0103,
+Assets/SimpleNaturePack/Materials/SimpleNaturePack_BG.mat,Material,0.0102,
+Assets/SimpleNaturePack/Prefabs/Rock_04.prefab,Prefab,0.0027,
+Assets/SimpleNaturePack/Prefabs/Flowers_01.prefab,Prefab,0.0065,
+Assets/SimpleNaturePack/Prefabs/Tree_01.prefab,Prefab,0.0064,
+Assets/SimpleNaturePack/Prefabs/Tree_03.prefab,Prefab,0.0064,
+Assets/SimpleNaturePack/Prefabs/Bush_03.prefab,Prefab,0.0065,
+Assets/SimpleNaturePack/Prefabs/Grass_01.prefab,Prefab,0.0065,
+Assets/SimpleNaturePack/Prefabs/Branch_01.prefab,Prefab,0.0027,
+Assets/SimpleNaturePack/Prefabs/Rock_02.prefab,Prefab,0.0027,
+Assets/SimpleNaturePack/Prefabs/Ground_01.prefab,Prefab,0.0027,
+Assets/SimpleNaturePack/Prefabs/Mushroom_02.prefab,Prefab,0.0065,
+Assets/SimpleNaturePack/Prefabs/Ground_03.prefab,Prefab,0.0027,
+Assets/SimpleNaturePack/Prefabs/Tree_05.prefab,Prefab,0.0065,
+Assets/SimpleNaturePack/Prefabs/Bush_01.prefab,Prefab,0.0065,
+Assets/SimpleNaturePack/Prefabs/Stump_01.prefab,Prefab,0.0064,
+Assets/SimpleNaturePack/Prefabs/Rock_05.prefab,Prefab,0.0027,
+Assets/SimpleNaturePack/Prefabs/Tree_02.prefab,Prefab,0.0064,
+Assets/SimpleNaturePack/Prefabs/Flowers_02.prefab,Prefab,0.0065,
+Assets/SimpleNaturePack/Prefabs/Mushroom_01.prefab,Prefab,0.0065,
+Assets/SimpleNaturePack/Prefabs/Rock_03.prefab,Prefab,0.0027,
+Assets/SimpleNaturePack/Prefabs/Bush_02.prefab,Prefab,0.0065,
+Assets/SimpleNaturePack/Prefabs/Grass_02.prefab,Prefab,0.0065,
+Assets/SimpleNaturePack/Prefabs/Tree_04.prefab,Prefab,0.0065,
+Assets/SimpleNaturePack/Prefabs/Ground_02.prefab,Prefab,0.0027,
+Assets/SimpleNaturePack/Prefabs/Rock_01.prefab,Prefab,0.0027,
+Assets/SimpleNaturePack/Models/Tree_02.fbx,Model,0.0453,网格压缩未开启; 网格优化未开启 (性能风险)
+Assets/SimpleNaturePack/Models/Tree_03.fbx,Model,0.0414,网格压缩未开启; 网格优化未开启 (性能风险)
+Assets/SimpleNaturePack/Models/Stump_01.fbx,Model,0.0261,网格压缩未开启; 网格优化未开启 (性能风险)
+Assets/SimpleNaturePack/Models/Rock_05.fbx,Model,0.0191,网格压缩未开启; 网格优化未开启 (性能风险)
+Assets/SimpleNaturePack/Models/Tree_01.fbx,Model,0.0448,网格压缩未开启; 网格优化未开启 (性能风险)
+Assets/SimpleNaturePack/Models/Rock_04.fbx,Model,0.0183,网格压缩未开启; 网格优化未开启 (性能风险)
+Assets/SimpleNaturePack/Models/Ground_02.fbx,Model,0.0338,网格压缩未开启; 网格优化未开启 (性能风险)
+Assets/SimpleNaturePack/Models/Tree_04.fbx,Model,0.0453,网格压缩未开启; 网格优化未开启 (性能风险)
+Assets/SimpleNaturePack/Models/Tree_05.fbx,Model,0.0294,网格压缩未开启; 网格优化未开启 (性能风险)
+Assets/SimpleNaturePack/Models/Rock_01.fbx,Model,0.0183,网格压缩未开启; 网格优化未开启 (性能风险)
+Assets/SimpleNaturePack/Models/Ground_03.fbx,Model,0.0335,网格压缩未开启; 网格优化未开启 (性能风险)
+Assets/SimpleNaturePack/Models/Ground_01.fbx,Model,0.0336,网格压缩未开启; 网格优化未开启 (性能风险)
+Assets/SimpleNaturePack/Models/Rock_03.fbx,Model,0.0180,网格压缩未开启; 网格优化未开启 (性能风险)
+Assets/SimpleNaturePack/Models/Rock_02.fbx,Model,0.0182,网格压缩未开启; 网格优化未开启 (性能风险)
+Assets/SimpleNaturePack/Models/Bush_03.fbx,Model,0.0490,网格压缩未开启; 网格优化未开启 (性能风险)
+Assets/SimpleNaturePack/Models/Bush_02.fbx,Model,0.0231,网格压缩未开启; 网格优化未开启 (性能风险)
+Assets/SimpleNaturePack/Models/Bush_01.fbx,Model,0.0238,网格压缩未开启; 网格优化未开启 (性能风险)
+Assets/SimpleNaturePack/Models/Grass_01.fbx,Model,0.0277,网格压缩未开启; 网格优化未开启 (性能风险)
+Assets/SimpleNaturePack/Models/Flowers_01.fbx,Model,0.0372,网格压缩未开启; 网格优化未开启 (性能风险)
+Assets/SimpleNaturePack/Models/Grass_02.fbx,Model,0.0233,网格压缩未开启; 网格优化未开启 (性能风险)
+Assets/SimpleNaturePack/Models/Flowers_02.fbx,Model,0.0433,网格压缩未开启; 网格优化未开启 (性能风险)
+Assets/SimpleNaturePack/Models/Mushroom_02.fbx,Model,0.0229,网格压缩未开启; 网格优化未开启 (性能风险)
+Assets/SimpleNaturePack/Models/Mushroom_01.fbx,Model,0.0333,网格压缩未开启; 网格优化未开启 (性能风险)
+Assets/SimpleNaturePack/Models/Branch_01.fbx,Model,0.0197,网格压缩未开启; 网格优化未开启 (性能风险)
+Assets/Editor/ResourceOptimizer.cs,Script,0.0058,
