@@ -33,6 +33,11 @@
 ### 4. BugReport (缺陷报告)
 *   **功能**：快速生成标准化的 Markdown 格式 Bug 报告，便于问题追踪与修复。
 
+### 5. Team Experience Base (项目避坑指南)
+*   **功能**：项目级的经验库与常见问题索引，旨在防止重复错误。
+*   **内容**：包含通用编码规范、资源管理陷阱等具体文档。
+*   **位置**：`.trae/skills/team-experience-base/`
+
 ## 📂 目录结构说明
 
 ```
@@ -60,4 +65,6 @@ Test2023MCP/
 
 ## 📝 更新日志
 
-*   **2026-03-03**: 初始化 README 文档，记录当前集成的 Skills (Resource Auditor, OpenMCP 等) 及项目结构。
+*   **2026-03-03**: 
+    *   新增 `team-experience-base` Skill (项目避坑指南)。
+    *   初始化 README 文档，记录当前集成的 Skills (Resource Auditor, OpenMCP 等) 及项目结构。
