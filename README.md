@@ -1,6 +1,6 @@
-# Test2023MCP - Unity MCP & Skill Testing Repository
+# Unity MCP & Skill Testing Repository
 
-本项目旨在记录和测试 **Model Context Protocol (MCP)** 以及 **Trae IDE Skills** 在 Unity 开发环境中的实际应用与效果。通过本仓库，我们探索 AI 辅助工具如何提升 Unity 项目的开发效率、代码质量以及资源管理能力。
+本项目旨在记录和测试 使用Claude code、Cursor、Trae 等IDE使用**Model Context Protocol (MCP)** 以及 **SKILLs** 等 AI 组合能力在 Unity 开发环境中的实际应用与效果。通过本仓库，我们探索 AI 辅助工具如何提升 Unity 项目的开发效率、代码质量以及资源管理能力。
 
 ## 🎯 项目目标
 
@@ -41,7 +41,7 @@
 ## 📂 目录结构说明
 
 ```
-Test2023MCP/
+Project/
 ├── .trae/skills/           # 存放所有自定义 Skill 的配置与脚本
 ├── AnalyzeResources/       # 存放 Resource Auditor 生成的审计报告与修复建议
 ├── Assets/                 # Unity 项目资源目录
