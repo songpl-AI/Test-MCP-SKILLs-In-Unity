@@ -28,6 +28,10 @@ description: "项目避坑指南与常见问题索引。当用户编写代码、
     *   涉及：纹理设置、模型导入、Prefab 嵌套、AssetBundle、内存占用等。
     *   *关键词*：`Texture`, `Mesh`, `Compression`, `Mipmap`, `Resources`
 
+*   **[TPS 角色控制最佳实践](references/tps_character_controller.md)**
+    *   涉及：第三人称视角移动、跳跃、重力、相机跟随与旋转、输入管理。
+    *   *关键词*：`InputManager`, `CharacterController`, `Camera`, `FreeLook`
+
 ## 如何贡献
 
 如果你在开发过程中解决了新的“坑”或总结了新的经验，请：
