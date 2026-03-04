@@ -43,6 +43,7 @@
   <ItemGroup>
      <Compile Include="Assets/Scripts/PlayerMovement.cs" />
      <Compile Include="Assets/Scripts/CameraFollow.cs" />
+     <Compile Include="Assets/Scripts/InputManager.cs" />
      <Folder Include="Assets" />
      <Folder Include="Assets/SimpleNaturePack" />
      <Folder Include="Assets/SimpleNaturePack/Models" />

@@ -4,6 +4,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private float moveSpeed = 5f;
+    [SerializeField] private float jumpHeight = 2f;
     [SerializeField] private float gravity = -9.81f;
 
     private CharacterController _characterController;
@@ -16,20 +17,33 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
-        float horizontal = Input.GetAxis("Horizontal");
-        float vertical = Input.GetAxis("Vertical");
-
-        // 使用 Transform 的方向来移动，这样移动是相对于玩家朝向的
-        // 如果想要绝对方向移动，可以使用 new Vector3(horizontal, 0, vertical)
-        // 这里为了简单起见，使用绝对方向，因为 Capsule 默认没有旋转控制
-        Vector3 move = new Vector3(horizontal, 0, vertical);
-        
-        _characterController.Move(move * moveSpeed * Time.deltaTime);
-
-        // 重力处理
+        // 重力处理（在地面时重置垂直速度，防止无限累积）
         if (_characterController.isGrounded && _velocity.y < 0)
         {
             _velocity.y = -2f;
+        }
+
+        Vector2 input = InputManager.Instance != null ? InputManager.Instance.GetMoveInput() : new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
+
+        // 获取相机方向（投影到水平面）
+        Vector3 cameraForward = Camera.main.transform.forward;
+        Vector3 cameraRight = Camera.main.transform.right;
+        cameraForward.y = 0;
+        cameraRight.y = 0;
+        cameraForward.Normalize();
+        cameraRight.Normalize();
+
+        // 计算移动方向
+        Vector3 move = cameraForward * input.y + cameraRight * input.x;
+        
+        _characterController.Move(move * moveSpeed * Time.deltaTime);
+
+        // 跳跃逻辑
+        bool jump = InputManager.Instance != null ? InputManager.Instance.GetJumpInput() : Input.GetButtonDown("Jump");
+        if (jump && _characterController.isGrounded)
+        {
+            // v = sqrt(h * -2 * g)
+            _velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
         }
 
         _velocity.y += gravity * Time.deltaTime;
