@@ -1,11 +1,11 @@
 # Unity MCP & Skill Testing Repository
 
-本项目旨在记录和测试 使用Claude code、Cursor、Trae 等IDE使用**Model Context Protocol (MCP)** 以及 **SKILLs** 等 AI 组合能力在 Unity 开发环境中的实际应用与效果。通过本仓库，我们探索 AI 辅助工具如何提升 Unity 项目的开发效率、代码质量以及资源管理能力。
+本项目旨在记录和测试 使用Claude code、Cursor、Trae 等IDE使用 **[Model Context Protocol (MCP)](https://modelcontextprotocol.io/docs/getting-started/intro)** 以及 **[SKILLs](https://agentskills.io/home)** 等 AI 组合能力在 Unity 开发环境中的实际应用与效果。通过本仓库，我们探索 AI 辅助工具如何提升 Unity 项目的开发效率、代码质量以及资源管理能力。
 
 ## 🎯 项目目标
 
-*   **MCP 集成测试**：验证通过 MCP 协议与 Unity 编辑器进行交互的可行性与稳定性。
-*   **Skill 开发与验证**：开发、测试并优化各类 Trae IDE Skills，使其更好地服务于 Unity 工作流。
+*   **MCP 集成测试**：验证通过 MCP 协议与 Unity 编辑器进行交互的可行性与稳定性，插件 [Unity-Editor-MCP](https://github.com/songpl-AI/unity-editor-mcp)。
+*   **Skill开发与验证**：开发、测试并优化各类 Trae IDE Skills，使其更好地服务于 Unity 工作流。
 *   **自动化工作流探索**：利用 AI Agent 实现资源审计、代码生成、Bug 报告等任务的自动化。
 
 ## 🛠️ 集成的 Skills
