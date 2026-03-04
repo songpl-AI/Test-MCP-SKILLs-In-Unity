@@ -41,15 +41,16 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets/Scripts/PlayerMovement.cs" />
-     <Compile Include="Assets/Scripts/CameraFollow.cs" />
-     <Compile Include="Assets/Scripts/InputManager.cs" />
-     <Compile Include="Assets/Scripts/Health.cs" />
-     <Compile Include="Assets/Scripts/PlayerCombat.cs" />
-     <Compile Include="Assets/Scripts/DamageEffect.cs" />
      <Compile Include="Assets/Scripts/MonsterController.cs" />
+     <Compile Include="Assets/Scripts/CameraFollow.cs" />
+     <Compile Include="Assets/Scripts/PlayerMovement.cs" />
      <Compile Include="Assets/Scripts/IDamageable.cs" />
      <Compile Include="Assets/Scripts/AutoSceneSetup.cs" />
+     <Compile Include="Assets/Scripts/DamageEffect.cs" />
+     <Compile Include="Assets/Scripts/PlayerCombat.cs" />
+     <Compile Include="Assets/Scripts/Health.cs" />
+     <Compile Include="Assets/Scripts/InputManager.cs" />
+     <Compile Include="Assets/Scripts/ObjectPoolManager.cs" />
      <Folder Include="Assets" />
      <Folder Include="Assets/SimpleNaturePack" />
      <Folder Include="Assets/SimpleNaturePack/Models" />

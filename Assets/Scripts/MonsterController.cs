@@ -15,6 +15,7 @@ public class MonsterController : MonoBehaviour
     [SerializeField] private float attackRange = 2f;
     [SerializeField] private int attackDamage = 10;
     [SerializeField] private float attackCooldown = 1.5f;
+    [SerializeField] private int effectCountPerHit = 5; // 每次攻击掉落数量
 
     [Header("References")]
     [SerializeField] private Transform target; // Player
@@ -113,6 +114,18 @@ public class MonsterController : MonoBehaviour
         if (damageable != null)
         {
             damageable.TakeDamage(attackDamage);
+            SpawnDamageEffects(target.position + Vector3.up);
+        }
+    }
+
+    private void SpawnDamageEffects(Vector3 position)
+    {
+        if (ObjectPoolManager.Instance != null)
+        {
+            for (int i = 0; i < effectCountPerHit; i++)
+            {
+                ObjectPoolManager.Instance.SpawnFromPool("DamageEffect", position, Quaternion.identity);
+            }
         }
     }
     
