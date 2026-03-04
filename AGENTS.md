@@ -10,6 +10,7 @@
     *   集成 **OpenMCP** (`com.openmcp.unity-editor-mcp`)，支持通过 MCP 协议控制 Unity 编辑器。
     *   包含 **SimpleNaturePack** 资源，用于构建演示场景。
     *   集成了资源审计与优化工具 (`AnalyzeResources`, `Assets/Editor/ResourceOptimizer.cs`)。
+    *   **怪物战斗系统**: 实现基础的怪物 AI 和主角战斗功能。
 
 ## 2. 目录结构说明 (Directory Structure)
 
@@ -17,13 +18,17 @@
     *   `Editor/`: 存放编辑器扩展脚本，如资源优化工具 `ResourceOptimizer.cs`。
     *   `SimpleNaturePack/`: 核心美术资源（模型、材质、纹理、预制体）。
     *   `Scenes/`: 存放示例场景。
+    *   `Scripts/`: 游戏逻辑脚本 (PlayerMovement, MonsterController, Health, etc.)
 *   `AnalyzeResources/`: 存放自动生成的资源审计报告 (`ResourceAudit_*.md`) 和修复建议 (`FixProposal_*.md`)。
 *   `Packages/`: 项目依赖管理，核心依赖包括 `com.openmcp.unity-editor-mcp`。
 *   `.trae/skills/`: 包含特定于此项目的 AI 技能配置（如 `unity-resource-auditor`, `openmcp`, `team-experience-base`）。
+*   `docs/`: 项目文档 (plan.md, progress.md, FAQ.md)
 
-##### 3. Unity 开发最佳实践 (Best Practices)
+## 3. Unity 开发最佳实践 (Best Practices)
 
-在本项目中进行开发或资源管理时，**必须首先查阅 `team-experience-base` Skill 中的避坑指南**，并严格遵守以下规范： 3.1 资源优化 (Resource Optimization)
+在本项目中进行开发或资源管理时，**必须首先查阅 `team-experience-base` Skill 中的避坑指南**，并严格遵守以下规范：
+
+### 3.1 资源优化 (Resource Optimization)
 
 参考 `AnalyzeResources` 目录下的审计报告，重点关注以下优化项：
 
@@ -56,12 +61,17 @@ AI 智能体在处理本项目任务时，应遵循以下工作流：
     *   使用 `LS` 和 `Read` 工具检查项目结构和关键文件（如 `manifest.json`, `AGENTS.md`）。
     *   检查 `.trae/skills` 了解可用技能。
     *   **关键步骤**: 调用 `team-experience-base` Skill 或查阅其 `references` 目录，确认当前任务是否有已知的“坑”或最佳实践。
-2.  **资源审计与修复**:
+2.  **持续开发与文档更新**:
+    *   **每次对话开始时**，检查 `docs/plan.md` 和 `docs/progress.md` 确认当前任务进度。
+    *   **编码前**，确保 `plan.md` 中的需求已明确。
+    *   **编码后**，及时更新 `progress.md` 的状态，并记录遇到的问题到 `FAQ.md`。
+    *   **阶段检查**：每完成一个阶段，进行回顾并更新文档。
+3.  **资源审计与修复**:
     *   在进行资源修改前，先调用 `unity-resource-auditor` 技能（如有）或检查 `AnalyzeResources` 目录下的最新报告。
     *   根据 `FixProposal` 制定修改计划。
-3.  **场景操作**:
+4.  **场景操作**:
     *   涉及场景物体创建、修改时，优先使用 `OpenMCP` 技能/工具，以确保操作的准确性和兼容性。
-4.  **验证**:
+5.  **验证**:
     *   修改代码或资源后，通过编译检查（无报错）和重新生成审计报告来验证修复效果。
 
 ## 5. 常用命令与工具 (Tools & Commands)
@@ -72,4 +82,4 @@ AI 智能体在处理本项目任务时，应遵循以下工作流：
 *   **文件操作**: 使用 `Read` 读取文件内容，`Write` / `SearchReplace` 修改文件。
 
 ---
-*最后更新时间: 2026-03-03*
+*最后更新时间: 2026-03-04*
